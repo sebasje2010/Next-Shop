@@ -1,11 +1,11 @@
 function Pagination({ offset, setOffset }) {
   const handlePrev = () => {
-    if (offset <= 5) return;
-    setOffset(offset - 5);
+    if (offset <= 1) return;
+    setOffset(offset - 10);
   };
 
   const handleNext = () => {
-    setOffset(offset + 5);
+    setOffset(offset + 10);
   };
 
   return (
